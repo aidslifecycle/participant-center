@@ -1,20 +1,14 @@
-import { NgModule } from "@angular/core";
-import { Routes, RouterModule } from "@angular/router";
-import { NavbarComponent } from "./navbar/navbar.component";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
 
 const routes: Routes = [
-  {
-    path: "",
-    component: NavbarComponent
-  },
-  {
-    path: "test",
-    component: NavbarComponent
-  }
+	{ path: '', component: NavbarComponent },
+	{ path: 'test', component: NavbarComponent }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+	imports: [RouterModule.forRoot(routes)],
+	exports: [RouterModule]
 })
 export class AppRoutingModule {}
