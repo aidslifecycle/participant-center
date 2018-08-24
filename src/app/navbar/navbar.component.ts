@@ -1,20 +1,19 @@
-import { Component } from '@angular/core';
+// tslint:disable-next-line:no-submodule-imports
 import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
+import { Component } from '@angular/core';
 import { Observable } from 'rxjs';
+// tslint:disable-next-line:no-submodule-imports
 import { map } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+	selector: 'app-navbar',
+	templateUrl: './navbar.component.html',
+	styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+	isHandset$: Observable<boolean> = this.breakpointObserver
+		.observe(Breakpoints.Handset)
+		.pipe(map((result) => result.matches));
 
-  isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
-    .pipe(
-      map(result => result.matches)
-    );
-    
-  constructor(private breakpointObserver: BreakpointObserver) {}
-  
-  }
+	constructor(private breakpointObserver: BreakpointObserver) {}
+}
