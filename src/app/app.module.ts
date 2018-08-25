@@ -5,12 +5,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { MaterialModule } from './material.module';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
 	declarations: [AppComponent, NavbarComponent],
-	imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, MaterialModule],
+	imports: [
+		BrowserModule,
+		BrowserAnimationsModule,
+		AppRoutingModule,
+		MaterialModule,
+		DashboardModule
+	],
 	providers: [],
 	bootstrap: [AppComponent]
 })
