@@ -10,9 +10,12 @@ import { ServicesModule } from './services/services.module';
 import { AppComponent } from './app.component';
 import { DonationTableComponent } from './components/donation-table/donation-table.component';
 import { NavComponent } from './components/nav/nav.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FundraisingProgressComponent } from './components/fundraising-progress/fundraising-progress.component';
+import { FundraisingPageComponent } from './components/fundraising-page/fundraising-page.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, DonationTableComponent],
+  declarations: [AppComponent, NavComponent, DonationTableComponent, DashboardComponent, FundraisingProgressComponent, FundraisingPageComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
