@@ -1,7 +1,13 @@
 <mat-toolbar color="primary">
   <h3>AIDS/LifeCycle</h3>
   <!-- This fills the remaining space of the current row -->
-  <span class="fill-remaining-space"></span> <button mat-button>Dasboard</button>
-  <button mat-button>Progress</button> <button mat-button>Send Email</button>
-  <button mat-button>Fundraising Page</button>
+  <span class="fill-remaining-space"></span>
+
+  <button routerLink="/dashboard" mat-button>Dashboard</button>
+
+  <button routerLink="/progress" mat-button>Progress</button>
+
+  <button routerLink="/send-email" mat-button>Send Email</button>
+
+  <button routerLink="/fundraising-page" mat-button>Fundraising Page</button>
 </mat-toolbar>

@@ -13,9 +13,10 @@ import { NavComponent } from './components/nav/nav.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FundraisingProgressComponent } from './components/fundraising-progress/fundraising-progress.component';
 import { FundraisingPageComponent } from './components/fundraising-page/fundraising-page.component';
+import { SendEmailComponent } from './components/send-email/send-email.component';
 
 @NgModule({
-  declarations: [AppComponent, NavComponent, DonationTableComponent, DashboardComponent, FundraisingProgressComponent, FundraisingPageComponent],
+  declarations: [AppComponent, NavComponent, DonationTableComponent, DashboardComponent, FundraisingProgressComponent, FundraisingPageComponent, SendEmailComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
