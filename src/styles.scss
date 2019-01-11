@@ -22,3 +22,7 @@ $pc-app-theme: mat-light-theme($pc-app-primary, $pc-app-accent, $pc-app-warn);
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include angular-material-theme($pc-app-theme);
+
+body {
+  margin: 0px;
+}
