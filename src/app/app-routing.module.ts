@@ -16,6 +16,14 @@ const routes: Routes = [
     component: DashboardComponent
   },
   {
+    path: 'dashboard/:project',
+    component: DashboardComponent
+  },
+  {
+    path: 'dashboard/:project/:test',
+    component: DashboardComponent
+  },
+  {
     path: 'progress',
     component: FundraisingProgressComponent
   },
