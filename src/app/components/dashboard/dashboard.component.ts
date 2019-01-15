@@ -19,6 +19,6 @@ export class DashboardComponent implements OnInit {
         return params.get('project');
       })
     );
-    this.hero$.subscribe();
+    this.hero$.subscribe((x) => console.log('x', x), (err) => console.log('err', err));
   }
 }
